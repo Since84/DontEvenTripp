@@ -14,7 +14,7 @@
 			var posts = this._getImages({
 				'action'	:'get_gallery',
 				'options'	: {
-					'posts_per_page' : 2,
+					'posts_per_page' : -1,
 					'post_type'		 : ['gallery']
 				}
 			});
