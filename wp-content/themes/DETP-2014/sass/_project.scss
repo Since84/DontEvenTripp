@@ -42,4 +42,9 @@ ul.projects{
 
 		}
 	}
+	@media screen and ( max-width: 750px ){
+		.project-container, .project-list {
+			width:100%;
+		}
+	}
 }

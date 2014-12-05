@@ -3,16 +3,14 @@ wp_head();
 
 $context 				= Timber::get_context();
 $context['menu'] 		= new TimberMenu();
-
 $context['foot']		= get_sidebar('footer');
-$context['donate']		= get_sidebar('donate');
-
+$context['donate']		= get_sidebar('donate' );
 
 //Get Pages
 $homepage 				= get_page_by_title('Home' );
 if ( $homepage ) { $context['home_post']	= new TimberPost( $homepage->ID ); }
 
-$missionpage 				= get_page_by_title('Our Mission' );
+$missionpage 				= get_page_by_title('Mission' );
 if ( $missionpage ) { $context['mission_post']	= new TimberPost( $missionpage->ID ); }
 
 

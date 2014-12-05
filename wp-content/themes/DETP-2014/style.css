@@ -624,6 +624,12 @@ ul.projects > li.project-list .project-list-item .project-description {
   margin-top: 1.5em;
   line-height: 1.3em;
 }
+@media screen and (max-width: 750px) {
+  /* line 46, sass/_project.scss */
+  ul.projects .project-container, ul.projects .project-list {
+    width: 100%;
+  }
+}
 
 /* line 3, sass/_blog.scss */
 .our-blog {
