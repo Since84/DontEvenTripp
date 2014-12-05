@@ -1,0 +1,160 @@
+/* Team Block */
+.our-team {
+	border-bottom: 3px solid $black;
+	background: #eee;
+	padding-left: 15vw;
+	.member {
+		position: relative;
+		width: 12.5vw; 
+		margin-right: 8vw;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 1.2rem;
+		text-align: left;
+		overflow: hidden;
+		padding: 5px;
+		border: 1px solid $black; 
+		border-width: 3px 0 0 0;
+		margin-bottom: 1em;
+		
+		// color: white;
+		// opacity: .6;
+		// transition: opacity .5s;
+		// &:hover { opacity: 1; }
+
+		.member-info {
+			display: inline-block;
+			padding: 0 1vw 0 0;
+			margin-bottom: .5em;
+			// width: 100%;
+			height: auto;
+			background-size: cover;
+			// -webkit-border-radius: 150px;
+			// -moz-border-radius: 150px;
+			// border-radius: 150px;
+		}
+
+		.member-thumbnail {
+			margin-bottom: 1em;
+		}
+
+		.member-bio {
+			display: inline-block;
+			vertical-align: top;
+			display: none;
+		}
+
+		h3.member-name {
+			margin-bottom: .3rem;
+			font-family: "myriad-std-tilt";
+			font-size: 1.5em;
+
+		}
+		h4.member-title, h4.member-phone {
+			font-size: .8em;
+		}
+
+		.member-contact {
+			display: inline-block;
+			width: 12vw;
+			vertical-align: top;
+			line-height: 1em;
+			li{
+				text-align: left;
+				a {
+					display: inline-block;
+					width: 100%;
+					// background: $yellow;
+					color: black;
+					padding: 8px 10px;
+					margin: .3em 0;
+					text-decoration: none;
+					font-size: .9rem;
+					text-align: left;
+					border-bottom: 1px dashed $black;
+					transition: background-color .5s, color .5s;
+					&:before {
+						content: '';
+						display: inline-block;
+						width: .8em;
+						height: .8em;
+						background-size: contain;
+						margin-right: 0.5em;
+					}
+					&:hover {
+						color: white;
+					}
+
+				}
+				&.facebook a {
+					&:before{
+						background-image: url("images/ikons/facebook.png");
+						background-size: contain;
+					}
+					&:hover{
+						&:before {
+							background-image: url("images/ikons/facebook-white.png");
+						}
+						background-color: $facebook-color;
+					}
+				}
+				&.twitter a {
+					&:before{
+						background-image: url("images/ikons/twitter.png");
+						background-size: contain;
+					}
+					&:hover{
+						&:before {
+							background-image: url("images/ikons/twitter-white.png");
+						}
+						background-color: $twitter-color;
+					}
+				}
+				&.linkedin a {
+					&:before{
+						background-image: url("images/ikons/linkedin.png");
+						background-size: contain;
+					}
+					&:hover{
+						&:before {
+							background-image: url("images/ikons/linkedin-white.png");
+						}
+						background-color: $linkedin-color;
+					}
+				}
+
+			}
+		}
+
+		.member-bio {
+			font-weight: lighter;
+		}
+
+
+		//Background Colors
+		// &:nth-child(4n-1){
+		// 	background: white;
+		// }
+		// &:nth-child(4n){
+		// 	background: $yellow;
+		// }
+		// &:nth-child(4n-2){
+		// 	background: $violet;
+		// }
+		// &:nth-child(4n-3){
+		// 	background: $black;
+		// }
+		// &:not(:nth-child(4n-1)):not(:nth-child(4n)){
+		// 	color: white;
+		// }
+		// &:not(:nth-child(4n-2)):not(:nth-child(4n-3)){
+		// 	color: $black;
+		// }
+
+		//Mobile styles
+		@media screen and ( max-width: 700px ){
+			width: 100%;
+		}
+
+	}
+}

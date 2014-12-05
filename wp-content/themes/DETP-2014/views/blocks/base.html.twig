@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="{% block html_lang %}en-US{% endblock %}" xml:lang="{% block xml_lang %}en{% endblock %}">
+<head>
+	{# <meta name="viewport" content="width=device-width, initial-scale=1"> #}
+	{% block in_head %}
+    	<title>{% block title %}{% endblock %}</title>
+    	{{ wp_head() }}
+	{% endblock %}
+	<script src="//use.typekit.net/clj2fyd.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+</head>
+<body class="detp-theme {% block body_class %}{{ body_class }}{% endblock %}">
+{% block main %}
+	<div id="main" class="container-fluid">
+		{% block main_content %}
+		    {% block header %}
+		    	{% include 'views/blocks/header.html.twig' %}
+		    {% endblock %}
+
+		{% endblock %}
+	
+{% endblock %}
+{% block footer %}
+		<footer>
+			Copyright 2015. Don't Even Tripp Productions
+		</footer>
+	</div>
+{% endblock %}
+</body>
+</html>

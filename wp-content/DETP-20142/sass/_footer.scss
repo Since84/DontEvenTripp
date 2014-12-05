@@ -1,0 +1,12 @@
+/* Footer Styles */
+
+footer {
+	margin-top: 4vh;
+	background: $black;
+	height: 5vh;
+	width: 100vw;
+	.contact-links {
+		li { @include col(4); }
+		
+	}
+}

@@ -1,0 +1,45 @@
+/* Project Block */
+
+ul.projects{
+	padding-left: 15vw;
+	& > li {
+		display: inline-block;
+		vertical-align: top;
+		&.project-container {
+			width: 50vw;
+			height: 35vw;
+			background: $black;
+			.project {
+				height: 35vw;
+				width: 50vw;
+				background-size: 100% auto;
+			}
+		}
+		&.project-list{
+			width: 34vw;
+			background: $yellow;
+
+			.project-list-item {
+				padding: 2vw;
+				min-height: 35vw;
+
+				.project-name {
+					@include header3;
+					font-size: 30px;
+					line-height: 1em;
+				}
+				.project-date, .project-type {
+					@include header3;
+					line-height: 1em;
+					font-size: 26px;
+					font-family: "myriad-pro";
+				}			
+				.project-description {
+					margin-top: 1.5em;
+					line-height: 1.3em;
+				}	
+			}
+
+		}
+	}
+}

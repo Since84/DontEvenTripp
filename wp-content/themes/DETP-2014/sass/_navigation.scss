@@ -1,0 +1,85 @@
+/* Page Navigation */
+
+.site-logo {
+	display: block;
+	position: absolute;
+	width: 12vw;
+	height: 20vw;
+	background: $site-logo no-repeat; 
+	background-size: contain;
+	left: 2vw;
+	top: 0.5vw;
+	background-color: white;
+	background-position: center center;
+}
+
+.site-navigation {
+	@include inline-nav;
+	background: $white;
+	// border-bottom: .5em solid $violet;
+	position: fixed;
+	// color: $textgray; 
+	top: 0;
+	width: 100%; 
+	text-align: center;
+	z-index: 1000;
+
+	li { 
+		position: relative;
+		a {
+			// color: $textgray;
+			.home-link & {
+				border-bottom: 4px solid $yellow;
+			}
+			&[href="#the-blog-2"]:before{
+				content: 'Coming Soon!';
+				font-family: 'myriad-std-tilt';
+				color: black;
+				background: $yellow;
+				display: block;
+				position: absolute;
+				top: 10px;
+				right: 0;
+				font-size: .4em;
+				padding: 5px;
+				transform: rotate(0.05turn)
+
+			}
+		}
+		@media screen and ( max-width: 700px ) {
+			&:not(.home-link) { width: 25%; }
+		}
+	}
+
+	@media screen and ( max-width: 700px ) {
+		padding-top: 2.8em; 
+		position: relative;
+		white-space: nowrap;
+		.home-link {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+	}
+
+	.admin-bar & {
+		top: 30px;
+	}
+} 
+
+.site-title {
+	font-size: 1.5em;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 1em;
+	margin: auto; 
+	z-index: 1000;
+	display: block;
+	height: 1em;
+	@media screen and ( max-width: 860px ) {
+		font-size: 1.1em;
+	}
+}

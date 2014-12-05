@@ -1,0 +1,31 @@
+
+<ul class="projects">
+<h2 class="section-title" id="the-work">The Work</h2>
+	<!-- <h2>Our Work</h2> -->
+<% postlist = posts.posts %>
+	<li class="project-container">
+		<ul>
+<% for( var p=0; p < postlist.length; p++ ){ %>
+	
+		<li class="project" style="background-image: url(<%= postlist[p].image.large[0] %>)">
+			<!-- <h3 class="project-name"><%= postlist[p].post_title %></h3>
+			<h4 class="project-type"><%= postlist[p].project_type %></h4>
+			<h4 class="project-date"><%= postlist[p].project_date %></h4>
+			<p class="project-description open"><%= postlist[p].post_content %></p>
+			<img src=""> -->
+<% } %>
+		</ul>
+	</li>
+	<li class="project-list">
+		<ul>
+<% for( var p=0; p < postlist.length; p++ ){ %>
+			<li class="project-list-item">
+				<h3 class="project-name"><%= postlist[p].post_title %></h3>
+				<h4 class="project-type"><%= postlist[p].project_type %></h4>
+				<h4 class="project-date"><%= postlist[p].project_date %></h4>
+				<p class="project-description open"><%= postlist[p].post_content %></p>
+			</li>
+<% } %>
+		</ul>
+	</li>
+</ul>

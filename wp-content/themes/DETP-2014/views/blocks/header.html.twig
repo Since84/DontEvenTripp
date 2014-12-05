@@ -1,0 +1,14 @@
+<header>
+	<div class="site-navigation">
+		<span class="site-logo"></span>
+		<ul class="container">
+		{% for item in menu.get_items %}
+			<li class="nav-main-item {{item.classes | join(' ')}}"><a class="nav-main-link" href="#{{ item.post_name}}">{{ item.title }}</a>
+	        </li>
+		{% endfor %}
+		</ul>
+		<div class="donation">
+			{{ donate }}
+		</div>
+	</div>
+</header>

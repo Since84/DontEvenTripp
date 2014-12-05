@@ -1,0 +1,124 @@
+/* DETP - Variables and Mixins */
+
+// Fonts
+@import "web-fonts";
+@include web-fonts(("Open Sans": ("400italic","600italic","700italic","400","700","600")));
+// @include web-fonts(("Josefin Sans": ("300", "400", "700"))); 
+// @include web-fonts(("Josefin Slab": ("400", "700")));  
+@include web-fonts(("Lato": ("400","700","900")));
+@include web-fonts(("Playfair Display": ("400")));
+@include web-fonts(("Righteous": ("400")));
+
+// Container
+	$containerWidth : 1024px;
+	$columns : 12;
+
+// Block
+	$blockMargin: .4%;
+
+// Colors
+	$black		:	#000000;
+	$white		:	rgb(255,255,255);
+	$violet 	: 	#722A67;
+	$yellow 	: 	#F7CA10;
+	$textgray 	:	#808285;
+
+// Media Breaks
+	$adminbar-break : 782px;
+
+// Images 
+	$site-logo : url('images/full_color.png'); 
+
+	$facebook-color : #3b5998;
+	$facebook : url('images/ikons/facebook.png'); 
+
+	$twitter : url('images/ikons/twitter.png'); 
+	$twitter-color: #00aced;
+
+	$linkedin : url('images/ikons/linkedin.png'); 
+	$linkedin-color: #007bb6;
+
+
+	$play : url('images/ikons/play.png'); 
+	$pause : url('images/ikons/pause.png'); 
+	$next : url('images/ikons/skip_next.png'); 
+	$previous : url('images/ikons/skip_previous.png'); 
+
+// Typography 
+@mixin maintext {
+	font-family: "myriad-pro";
+	color: $black;
+	font-weight: lighter;
+}
+
+@mixin header1 {
+	font-family: 'myriad-std-tilt', sans-serif;
+}
+
+@mixin header2 {
+	font-family: 'myriad-pro', sans-serif;
+	font-weight: 200;
+	font-size: 28px;
+	color: $black;	
+}
+
+@mixin header3 {
+	font-family: 'myriad-std-tilt', sans-serif;
+	font-weight: 200;
+	font-size: 18px;
+	color: $black;
+	@media screen and ( max-width: 940px ) {
+		// font-size: 14px;
+	}
+}
+
+// Mixins
+@mixin admin-bar-margin { 		//Add margin for adminbar
+	margin-top: 32px;
+	@media screen and ( max-width: 782px ) {
+		margin-top: 46px;
+	}
+}
+
+@mixin inline-nav {
+	position: relative; 
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 1vw 2%;
+		max-width: 200px;
+		text-align: center;
+		a{
+			text-decoration: none;	
+			@include header2;
+			// font-family: 'myriad-std-tilt';
+		}
+		.nav-drop {    // Sub Nav
+			display: none;
+			position: absolute;
+			width: 100%; 
+		}
+		&:hover .nav-drop { display: block; }
+
+		&.home-link {
+			max-width: 300px;
+			a {
+				// font-family: "myriad-std-tilt";
+				font-size: 26px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+@mixin col($w){
+	width: (( 100% / $columns ) * $w ) - 1.1;
+	margin: $blockMargin;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+
