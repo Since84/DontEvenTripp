@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Theme Name: Don't Even Tripp 2014 */
 @import url("//fonts.googleapis.com/css?family=Open Sans%3A400italic%2C600italic%2C700italic%2C400%2C700%2C600");
 @import url("//fonts.googleapis.com/css?family=Lato%3A400%2C700%2C900");
@@ -317,7 +316,6 @@ body:not(.wp-admin) {
 }
 /* line 65, sass/_home.scss */
 .home .our-mission blockquote {
-  quotes: "“" "”" "‘" "’";
   position: relative;
   width: 100%;
   display: inline-block;
@@ -325,25 +323,25 @@ body:not(.wp-admin) {
   font-family: "myriad-std-tilt";
   margin-bottom: 40px;
 }
-/* line 73, sass/_home.scss */
+/* line 72, sass/_home.scss */
 .home .our-mission blockquote:before, .home .our-mission blockquote:after {
   font-family: "myriad-std-tilt";
   font-size: 50px;
   position: absolute;
 }
-/* line 78, sass/_home.scss */
+/* line 77, sass/_home.scss */
 .home .our-mission blockquote:before {
   content: open-quote;
   left: -25px;
   padding-right: 10px;
 }
-/* line 83, sass/_home.scss */
+/* line 82, sass/_home.scss */
 .home .our-mission blockquote:after {
   content: close-quote;
   bottom: -20px;
   padding-left: 10px;
 }
-/* line 89, sass/_home.scss */
+/* line 88, sass/_home.scss */
 .home .our-mission .promo {
   border: 15px solid #000000;
 }
