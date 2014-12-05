@@ -296,8 +296,9 @@ body:not(.wp-admin) {
 .home .our-mission p {
   max-width: 750px;
   margin: auto;
+  line-height: 1.2em;
 }
-/* line 46, sass/_home.scss */
+/* line 47, sass/_home.scss */
 .home .our-mission blockquote {
   quotes: "“" "”" "‘" "’";
   position: relative;
@@ -305,26 +306,27 @@ body:not(.wp-admin) {
   display: inline-block;
   font-size: 40px;
   font-family: "myriad-std-tilt";
+  margin-bottom: 10px;
 }
-/* line 53, sass/_home.scss */
+/* line 55, sass/_home.scss */
 .home .our-mission blockquote:before, .home .our-mission blockquote:after {
   font-family: "myriad-std-tilt";
   font-size: 50px;
   position: absolute;
 }
-/* line 58, sass/_home.scss */
+/* line 60, sass/_home.scss */
 .home .our-mission blockquote:before {
   content: open-quote;
   left: -25px;
   padding-right: 10px;
 }
-/* line 63, sass/_home.scss */
+/* line 65, sass/_home.scss */
 .home .our-mission blockquote:after {
   content: close-quote;
   bottom: -20px;
   padding-left: 10px;
 }
-/* line 69, sass/_home.scss */
+/* line 71, sass/_home.scss */
 .home .our-mission .promo {
   margin-top: 1em;
   border: 15px solid #000000;
