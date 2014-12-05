@@ -606,7 +606,7 @@ ul.projects > li.project-container {
 ul.projects > li.project-container .project {
   height: 35vw;
   width: 50vw;
-  background-size: 100% auto;
+  background-size: cover;
 }
 /* line 18, sass/_project.scss */
 ul.projects > li.project-list {
