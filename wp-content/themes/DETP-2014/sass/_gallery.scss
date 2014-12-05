@@ -1,0 +1,73 @@
+/* Gallery */
+
+.detp-gallery {
+	position: relative;
+	.gallery {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		margin: auto;
+		width: 100%;
+		height: 40vw;
+
+		img {
+			position: absolute;
+			top: 0;
+			opacity: 0;
+			// bottom: 0;
+			left: 0;
+			right: 0;
+			height: auto;
+			width: 100%;
+			max-width: 1600px;
+			height: auto;
+			margin: auto;
+			-webkit-transition: opacity 1s;
+	    	transition: opacity 1s;
+
+			&.active {
+				opacity: 1;
+				position:relative;
+			}
+		}
+	}
+	.controls{
+		position: absolute;
+		display: block;
+		width: 40vw;
+		text-align: center;
+		background: $yellow;
+		-webkit-transition: opacity .5s;
+    	transition: opacity .5s;
+    	margin-top: -3em;
+    	margin: auto;
+    	bottom: 0px;
+    	left: 0px;
+    	right: 0px;
+		&:hover {
+		}
+		
+		li{
+			display: inline-block;
+			position: relative;
+			width: 50px;
+			height: 40px;
+			color: $yellow;
+			padding: .5em 1em;
+
+			&.prev {
+				background-image: $previous;
+				background-size: contain;
+			}
+			&.next {
+				background-image: $next;
+				background-size: contain;
+			}
+			&.play_pause {
+				background-image: $play;
+				background-size: contain;
+			}
+		}
+	}
+}
