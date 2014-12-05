@@ -602,7 +602,7 @@ ul.projects > li.project-list .project-list-item {
 }
 /* line 26, sass/_project.scss */
 ul.projects > li.project-list .project-list-item .project-name {
-  font-family: 'myriad-std-tilt', sans-serif;
+  font-family: 'myriad-std-pro', sans-serif;
   font-weight: 200;
   font-size: 18px;
   color: #000000;
@@ -611,7 +611,7 @@ ul.projects > li.project-list .project-list-item .project-name {
 }
 /* line 31, sass/_project.scss */
 ul.projects > li.project-list .project-list-item .project-date, ul.projects > li.project-list .project-list-item .project-type {
-  font-family: 'myriad-std-tilt', sans-serif;
+  font-family: 'myriad-std-pro', sans-serif;
   font-weight: 200;
   font-size: 18px;
   color: #000000;
@@ -623,6 +623,32 @@ ul.projects > li.project-list .project-list-item .project-date, ul.projects > li
 ul.projects > li.project-list .project-list-item .project-description {
   margin-top: 1.5em;
   line-height: 1.3em;
+}
+
+/* line 3, sass/_blog.scss */
+.our-blog {
+  border-bottom: 3px solid #000000;
+  padding-left: 15vw;
+}
+/* line 7, sass/_blog.scss */
+.our-blog .post {
+  border: 3px solid #000000;
+  border-width: 2px 0 0;
+  line-height: 1.3em;
+  padding: 1em 0;
+  width: 60vw;
+}
+/* line 14, sass/_blog.scss */
+.our-blog .post-title {
+  font-family: 'myriad-std-pro', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: #000000;
+  padding-bottom: 20px;
+}
+/* line 18, sass/_blog.scss */
+.our-blog .post-date {
+  margin-bottom: 10px;
 }
 
 /* Footer */

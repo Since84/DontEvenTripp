@@ -1,0 +1,21 @@
+
+
+.our-blog {
+	border-bottom: 3px solid $black;
+	padding-left: 15vw;
+
+	.post {
+		border: 3px solid $black;
+		border-width: 2px 0 0;
+		line-height: 1.3em;
+		padding: 1em 0 ;
+		width: 60vw;
+	}
+	.post-title {
+		@include header3;
+		padding-bottom: 20px;
+	}
+	.post-date {
+		margin-bottom: 10px;
+	}
+}
