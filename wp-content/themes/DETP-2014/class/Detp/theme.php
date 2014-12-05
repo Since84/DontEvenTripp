@@ -10,12 +10,8 @@ class Theme {
 				// 'admin_init'							=> array($this, 'adminInit'),
 				// 'admin_head'							=> array($this, 'adminHead'),
 				,'save_post'							=> array($this, 'save_post')
-<<<<<<< HEAD
-				,'add_meta_boxes'						=> array(array($this, 'add_meta_boxes'), 0, 1),
-=======
 				,'add_meta_boxes'						=> array(array($this, 'add_meta_boxes'), 0, 1)
 				,'widgets_init'							=> array($this, 'widgets_init')
->>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
 				// 'init'									=> array($this,'add_query_vars'),
 				// 'init'									=> array($this, 'myplugin_settings')
 			);
@@ -106,15 +102,11 @@ class Theme {
 		add_meta_box('meta_box', 'Member Info', array($this, 'show_member_meta_box'), 'team');
 		add_meta_box('meta_box', 'Project Info', array($this, 'show_project_meta_box'), 'project');
 	}
-
-<<<<<<< HEAD
-=======
 	public function widgets_init(){
 		register_sidebar( array('name'=>'donate') );
 		register_sidebar( array('name'=>'footer') );
 	}
 
->>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
 	public function save_post($post_id) {
 		
 		//Member Meta

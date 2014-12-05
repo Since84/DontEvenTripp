@@ -53,11 +53,7 @@ class Service {
 	*/
 	public function get_gallery() {
 		$galleryArgs = $_POST['options'] ? $_POST['options'] : array(
-<<<<<<< HEAD
-			'posts_per_page'		=>	'2'
-=======
 			'posts_per_page'		=>	'10'
->>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
 		);
 		$galleryArgs['post_type'] = array('gallery');
 		$galleryQuery 	= new WP_Query($galleryArgs);

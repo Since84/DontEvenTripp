@@ -3,12 +3,6 @@
 		<span class="site-logo"></span>
 		<ul class="container">
 		{% for item in menu.get_items %}
-<<<<<<< HEAD
-			<li class="nav-main-item {{item.classes | join(' ')}}"><a class="nav-main-link" href="{{item.get_link}}">{{item.title}}</a>
-	        </li>
-		{% endfor %}
-		</ul>
-=======
 			<li class="nav-main-item {{item.classes | join(' ')}}"><a class="nav-main-link" href="#{{ item.post_name}}">{{ item.title }}</a>
 	        </li>
 		{% endfor %}
@@ -16,6 +10,5 @@
 		<div class="donation">
 			{{ donate }}
 		</div>
->>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
 	</div>
 </header>
