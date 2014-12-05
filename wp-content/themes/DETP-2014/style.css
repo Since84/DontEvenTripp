@@ -448,7 +448,7 @@ body:not(.wp-admin) {
 .our-team .member h3.member-name {
   margin-bottom: .3rem;
   font-family: "myriad-std-tilt";
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 /* line 52, sass/_team.scss */
 .our-team .member h4.member-title, .our-team .member h4.member-phone {
