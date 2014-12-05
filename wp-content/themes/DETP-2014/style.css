@@ -327,6 +327,7 @@ body:not(.wp-admin) {
 /* line 69, sass/_home.scss */
 .home .our-mission .promo {
   margin-top: 1em;
+  border: 15px solid #000000;
 }
 
 /* Gallery */
