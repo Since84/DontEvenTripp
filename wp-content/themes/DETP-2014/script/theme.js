@@ -9,7 +9,7 @@
 		},
 
 		_create:function(){
-
+			var self=this;
 			// Get Gallery
 			var posts = this._getImages({
 				'action'	:'get_gallery',
@@ -41,6 +41,10 @@
 			$(this.options.teamEl)
 				.append(teamHtml);
 
+			$(this.element).find('.member').click(function(){
+				self._openMember(this);
+			});
+
 			// Get Work
 			var project = this._getPosts({
 				'action'	:'get_posts',
@@ -70,6 +74,13 @@
 
 
 		},
+		_openMember: function(elem){
+			$(self.element).find('.member.open').removeClass('open');
+
+			$(elem).addClass('open')
+			$(elem).parents('.team').not('.open').addClass('.open');
+		},
+
 		_getImages: function(args){
 			var self = this;
 
