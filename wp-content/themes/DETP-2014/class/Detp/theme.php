@@ -10,6 +10,7 @@ class Theme {
 				// 'admin_init'							=> array($this, 'adminInit'),
 				// 'admin_head'							=> array($this, 'adminHead'),
 				,'save_post'							=> array($this, 'save_post')
+
 				,'add_meta_boxes'						=> array(array($this, 'add_meta_boxes'), 0, 1)
 				,'widgets_init'							=> array($this, 'widgets_init')
 				// 'init'									=> array($this,'add_query_vars'),
@@ -102,10 +103,13 @@ class Theme {
 		add_meta_box('meta_box', 'Member Info', array($this, 'show_member_meta_box'), 'team');
 		add_meta_box('meta_box', 'Project Info', array($this, 'show_project_meta_box'), 'project');
 	}
+
+
 	public function widgets_init(){
 		register_sidebar( array('name'=>'donate') );
 		register_sidebar( array('name'=>'footer') );
 	}
+
 
 	public function save_post($post_id) {
 		
