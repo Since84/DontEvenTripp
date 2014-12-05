@@ -410,8 +410,8 @@ body:not(.wp-admin) {
 /* line 6, sass/_team.scss */
 .our-team .member {
   position: relative;
-  width: 12.5vw;
-  margin-right: 8vw;
+  width: 14vw;
+  margin-right: 7vw;
   display: inline-block;
   vertical-align: top;
   font-size: 1.1rem;
@@ -451,7 +451,7 @@ body:not(.wp-admin) {
 /* line 55, sass/_team.scss */
 .our-team .member .member-contact {
   display: inline-block;
-  width: 12vw;
+  width: 100%;
   vertical-align: top;
   line-height: 1em;
   text-align: center;
