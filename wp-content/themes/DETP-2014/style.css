@@ -324,6 +324,10 @@ body:not(.wp-admin) {
   bottom: -20px;
   padding-left: 10px;
 }
+/* line 69, sass/_home.scss */
+.home .our-mission .promo {
+  margin-top: 1em;
+}
 
 /* Gallery */
 /* line 3, sass/_gallery.scss */
