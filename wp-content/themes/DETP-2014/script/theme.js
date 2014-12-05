@@ -41,7 +41,7 @@
 			$(this.options.teamEl)
 				.append(teamHtml);
 
-			$(this.element).find('.member').click(function(){
+			this.element.find('.member').click(function(){
 				self._openMember(this);
 			});
 
@@ -75,10 +75,15 @@
 
 		},
 		_openMember: function(elem){
-			$(self.element).find('.member.open').removeClass('open');
+			var id = $(elem).attr('member-id');
+
+			$(this.element).find('.member.open').removeClass('open');
 
 			$(elem).addClass('open')
-			$(elem).parents('.team').not('.open').addClass('.open');
+			$(elem).parents('.team').not('.open').addClass('open');
+
+			$(this.element).find('.team-bios .member-bio.open').removeClass('open');
+			$(this.element).find('.team-bios .member-bio[member-id="'+ id +'"]').addClass('open');
 		},
 
 		_getImages: function(args){

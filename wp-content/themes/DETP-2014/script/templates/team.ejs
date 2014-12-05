@@ -6,7 +6,7 @@
 <% console.log(posts) %>
 
 <% for( var p=0; p < postlist.length; p++ ){ %>
-	<li class="member" member-id="<%= postlist.post_author %>">
+	<li class="member" member-id="<%= postlist[p].ID %>">
 		<div class="member-info">
 			<img class="member-thumbnail" src="<%= postlist[p].image.thumb[0] %>">
 			<ul class="member-contact moreinfo">
@@ -27,9 +27,12 @@
 				<li class="instagram"></li>
 			</ul>
 		</div>
-		<div class="member-bio">
-			<p class="member-bio open"><%= postlist[p].post_excerpt %></p>
-			<div class="member-contact open"><!-- TODO: add member contact --></div>
-		</div>
 <% } %>
+</ul>
+<ul class="team-bios">
+	<% for( var p=0; p < postlist.length; p++ ){ %>
+		<li class="member-bio" member-id="<%= postlist[p].ID %>">
+			<%= postlist[p].post_content %>
+		</li>
+	<% } %>
 </ul>

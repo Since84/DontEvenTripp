@@ -537,6 +537,23 @@ body:not(.wp-admin) {
   }
 }
 
+/* line 163, sass/_team.scss */
+.team-bios li {
+  position: absolute;
+  left: 3000px;
+  display: inline-block;
+  margin: 1em 0.5em 2em;
+  width: 65vw;
+  padding: 2em;
+  background: #F7CA10;
+  width: 73vw;
+}
+/* line 172, sass/_team.scss */
+.team-bios li.open {
+  position: relative;
+  left: auto;
+}
+
 /* Project Block */
 /* line 3, sass/_project.scss */
 ul.projects {
