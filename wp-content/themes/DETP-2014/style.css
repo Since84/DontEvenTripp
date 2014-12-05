@@ -418,11 +418,9 @@ body:not(.wp-admin) {
   text-align: left;
   overflow: hidden;
   padding: 5px;
-  border: 1px solid #000000;
-  border-width: 3px 0 0 0;
   margin-bottom: 1em;
 }
-/* line 25, sass/_team.scss */
+/* line 23, sass/_team.scss */
 .our-team .member .member-info {
   display: inline-block;
   padding: 0 1vw 0 0;
@@ -430,103 +428,103 @@ body:not(.wp-admin) {
   height: auto;
   background-size: cover;
 }
-/* line 37, sass/_team.scss */
+/* line 35, sass/_team.scss */
 .our-team .member .member-thumbnail {
   margin-bottom: 1em;
 }
-/* line 41, sass/_team.scss */
+/* line 39, sass/_team.scss */
 .our-team .member .member-bio {
   display: inline-block;
   vertical-align: top;
   display: none;
 }
-/* line 47, sass/_team.scss */
+/* line 45, sass/_team.scss */
 .our-team .member h3.member-name {
   margin-bottom: .3rem;
   font-family: "myriad-std-tilt";
   font-size: 1.5em;
 }
-/* line 53, sass/_team.scss */
+/* line 51, sass/_team.scss */
 .our-team .member h4.member-title, .our-team .member h4.member-phone {
   font-size: .8em;
 }
-/* line 57, sass/_team.scss */
+/* line 55, sass/_team.scss */
 .our-team .member .member-contact {
   display: inline-block;
   width: 12vw;
   vertical-align: top;
   line-height: 1em;
-}
-/* line 62, sass/_team.scss */
-.our-team .member .member-contact li {
-  text-align: left;
+  text-align: center;
+  border: 3px solid #000000;
+  border-width: 3px 0;
+  padding: 5px 0 5px;
 }
 /* line 64, sass/_team.scss */
-.our-team .member .member-contact li a {
+.our-team .member .member-contact li {
+  text-align: center;
   display: inline-block;
-  width: 100%;
+  padding: 5px;
+}
+/* line 68, sass/_team.scss */
+.our-team .member .member-contact li a, .our-team .member .member-contact li span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
   color: black;
-  padding: 8px 10px;
-  margin: .3em 0;
+  padding: 10px;
   text-decoration: none;
   font-size: .9rem;
   text-align: left;
-  border-bottom: 1px dashed #000000;
   transition: background-color .5s, color .5s;
 }
-/* line 76, sass/_team.scss */
-.our-team .member .member-contact li a:before {
-  content: '';
-  display: inline-block;
-  width: .8em;
-  height: .8em;
-  background-size: contain;
-  margin-right: 0.5em;
-}
-/* line 84, sass/_team.scss */
-.our-team .member .member-contact li a:hover {
+/* line 80, sass/_team.scss */
+.our-team .member .member-contact li a:hover, .our-team .member .member-contact li span:hover {
   color: white;
 }
-/* line 90, sass/_team.scss */
-.our-team .member .member-contact li.facebook a:before {
+/* line 86, sass/_team.scss */
+.our-team .member .member-contact li.facebook a {
   background-image: url("images/ikons/facebook.png");
   background-size: contain;
 }
-/* line 94, sass/_team.scss */
-.our-team .member .member-contact li.facebook a:hover {
+/* line 90, sass/_team.scss */
+.our-team .member .member-contact li.facebook:hover {
   background-color: #3b5998;
 }
-/* line 95, sass/_team.scss */
-.our-team .member .member-contact li.facebook a:hover:before {
+/* line 92, sass/_team.scss */
+.our-team .member .member-contact li.facebook:hover a {
   background-image: url("images/ikons/facebook-white.png");
 }
-/* line 102, sass/_team.scss */
-.our-team .member .member-contact li.twitter a:before {
-  background-image: url("images/ikons/twitter.png");
+/* line 98, sass/_team.scss */
+.our-team .member .member-contact li.mail span {
+  background-image: url("images/ikons/mail.png");
   background-size: contain;
 }
-/* line 106, sass/_team.scss */
-.our-team .member .member-contact li.twitter a:hover {
-  background-color: #00aced;
+/* line 102, sass/_team.scss */
+.our-team .member .member-contact li.mail:hover {
+  background-color: #F7CA10;
 }
-/* line 107, sass/_team.scss */
-.our-team .member .member-contact li.twitter a:hover:before {
-  background-image: url("images/ikons/twitter-white.png");
+/* line 104, sass/_team.scss */
+.our-team .member .member-contact li.mail:hover span {
+  background-image: url("images/ikons/mail.png");
+}
+/* line 110, sass/_team.scss */
+.our-team .member .member-contact li.profile span {
+  background-image: url("images/ikons/book_1.png");
+  background-size: contain;
 }
 /* line 114, sass/_team.scss */
-.our-team .member .member-contact li.linkedin a:before {
-  background-image: url("images/ikons/linkedin.png");
-  background-size: contain;
+.our-team .member .member-contact li.profile:hover {
+  background-color: #F7CA10;
 }
-/* line 118, sass/_team.scss */
-.our-team .member .member-contact li.linkedin a:hover {
-  background-color: #007bb6;
+/* line 121, sass/_team.scss */
+.our-team .member .member-contact .info {
+  width: 100%;
+  border-bottom: 1px dashed #000000;
+  margin-bottom: 5px;
 }
-/* line 119, sass/_team.scss */
-.our-team .member .member-contact li.linkedin a:hover:before {
-  background-image: url("images/ikons/linkedin-white.png");
-}
-/* line 129, sass/_team.scss */
+/* line 128, sass/_team.scss */
 .our-team .member .member-bio {
   font-weight: lighter;
 }
@@ -537,21 +535,31 @@ body:not(.wp-admin) {
   }
 }
 
-/* line 163, sass/_team.scss */
-.team-bios li {
-  position: absolute;
-  left: 3000px;
-  display: inline-block;
-  margin: 1em 0.5em 2em;
-  width: 65vw;
-  padding: 2em;
-  background: #F7CA10;
-  width: 73vw;
+/* line 161, sass/_team.scss */
+.team-bios {
+  width: 74vw;
+  margin-bottom: 1em;
 }
-/* line 172, sass/_team.scss */
+/* line 164, sass/_team.scss */
+.team-bios li {
+  position: relative;
+  max-height: 0px;
+  overflow: hidden;
+  display: inline-block;
+  width: 61vw;
+  background: #F7CA10;
+  width: 100%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  transition: max-height .5s, padding-top .5s, padding-bottom .5s;
+}
+/* line 176, sass/_team.scss */
 .team-bios li.open {
   position: relative;
   left: auto;
+  max-height: 500px;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 
 /* Project Block */

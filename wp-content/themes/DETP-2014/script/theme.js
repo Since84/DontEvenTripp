@@ -41,7 +41,7 @@
 			$(this.options.teamEl)
 				.append(teamHtml);
 
-			this.element.find('.member').click(function(){
+			$('.profile').click(function(){
 				self._openMember(this);
 			});
 
@@ -75,15 +75,35 @@
 
 		},
 		_openMember: function(elem){
+			var self = this;
+			var member = $(elem).parents('.member');
+			var id = member.attr('member-id');
+
+			if ( member.is('.open') ) {
+				self._closeMember(member);
+			} else {
+
+				//Close Open Member
+				this._closeMember( $(this.element).find('.member.open') );
+				$(this.element).find('.team-bios .member-bio.open').removeClass('open');
+
+				//Open New Member
+				member.addClass('open');
+				$(this.element).find('.team-bios .member-bio[member-id="'+ id +'"]').addClass('open');
+
+			}
+
+			
+		},
+
+		_closeMember: function(elem){
+			var self = this;
 			var id = $(elem).attr('member-id');
-
-			$(this.element).find('.member.open').removeClass('open');
-
-			$(elem).addClass('open')
-			$(elem).parents('.team').not('.open').addClass('open');
-
-			$(this.element).find('.team-bios .member-bio.open').removeClass('open');
-			$(this.element).find('.team-bios .member-bio[member-id="'+ id +'"]').addClass('open');
+			$(elem).removeClass('open');
+			$(this.element).find('.team-bios .member-bio[member-id="'+ id +'"]').removeClass('open');
+			$(elem).find('.profile').on('click', function(){
+				self._openMember(elem);
+			})
 		},
 
 		_getImages: function(args){

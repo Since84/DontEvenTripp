@@ -16,14 +16,10 @@
 <!-- 					<h4 class="member-phone moreinfo"><%= postlist[p].member_phone %></h4> -->
 				</li>
 				<% if ( postlist[p].member_facebook != "" ) { %>
-				<li class="facebook"><a href="http://facebook.com/<%= postlist[p].member_facebook %>">/<%= postlist[p].member_facebook %></a></li>
+				<li class="facebook"><a href="http://facebook.com/<%= postlist[p].member_facebook %>"></a></li>
 				<% } %>
-				<% if ( postlist[p].member_twitter!= "" ) { %>
-				<li class="twitter"><a href="http://twitter.com/<%= postlist[p].member_twitter %>">/<%= postlist[p].member_twitter %></a></li>
-				<% } %>
-				<% if ( postlist[p].member_linkedin!= "" ) { %>
-				<li class="linkedin"><a href="http://linkedin.com/in/<%= postlist[p].member_linkedin %>">/<%= postlist[p].member_linkedin %></a></li>
-				<% } %>
+				<li class="mail"><span></span></li>
+				<li class="profile"><span href=""></span></li>
 				<li class="instagram"></li>
 			</ul>
 		</div>

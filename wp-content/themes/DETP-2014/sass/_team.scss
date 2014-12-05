@@ -13,8 +13,6 @@
 		text-align: left;
 		overflow: hidden;
 		padding: 5px;
-		border: 1px solid $black; 
-		border-width: 3px 0 0 0;
 		margin-bottom: 1em;
 		
 		// color: white;
@@ -59,70 +57,71 @@
 			width: 12vw;
 			vertical-align: top;
 			line-height: 1em;
+			text-align: center;
+			border: 3px solid $black;
+			border-width: 3px 0;
+			padding: 5px 0 5px;
 			li{
-				text-align: left;
-				a {
+				text-align: center;
+				display: inline-block;
+				padding: 5px;
+				a, span {
 					display: inline-block;
-					width: 100%;
-					// background: $yellow;
+					width: 10px;
+					height: 10px;
+					background-repeat: no-repeat;
+					background-size: contain; 
 					color: black;
-					padding: 8px 10px;
-					margin: .3em 0;
+					padding: 10px;
 					text-decoration: none;
 					font-size: .9rem;
 					text-align: left;
-					border-bottom: 1px dashed $black;
 					transition: background-color .5s, color .5s;
-					&:before {
-						content: '';
-						display: inline-block;
-						width: .8em;
-						height: .8em;
-						background-size: contain;
-						margin-right: 0.5em;
-					}
 					&:hover {
 						color: white;
 					}
 
 				}
-				&.facebook a {
-					&:before{
+				&.facebook {
+					a {	
 						background-image: url("images/ikons/facebook.png");
 						background-size: contain;
 					}
 					&:hover{
-						&:before {
+						background-color: $facebook-color;
+						a{
 							background-image: url("images/ikons/facebook-white.png");
 						}
-						background-color: $facebook-color;
 					}
 				}
-				&.twitter a {
-					&:before{
-						background-image: url("images/ikons/twitter.png");
+				&.mail {
+					span {
+						background-image: url("images/ikons/mail.png");
 						background-size: contain;
 					}
 					&:hover{
-						&:before {
-							background-image: url("images/ikons/twitter-white.png");
+						background-color: $yellow;
+						span {
+							background-image: url("images/ikons/mail.png");
 						}
-						background-color: $twitter-color;
 					}
 				}
-				&.linkedin a {
-					&:before{
-						background-image: url("images/ikons/linkedin.png");
+				&.profile {
+					span{
+						background-image: url("images/ikons/book_1.png");
 						background-size: contain;
 					}
 					&:hover{
-						&:before {
-							background-image: url("images/ikons/linkedin-white.png");
-						}
-						background-color: $linkedin-color;
+						background-color: $yellow;
 					}
+
 				}
 
+			}
+			.info {
+				width: 100%;
+				border-bottom: 1px dashed $black;
+				margin-bottom: 5px;
 			}
 		}
 
@@ -160,18 +159,26 @@
 
 }
 .team-bios {
+	width: 74vw;
+	margin-bottom: 1em;
 	li {
-		position: absolute;
-		left: 3000px;
+		position: relative;
+		max-height: 0px;
+		overflow: hidden;
 		display: inline-block;
-		margin: 1em 0.5em 2em;
-		width: 65vw;
-		padding: 2em;
+		width: 61vw;
 		background: $yellow;
-		width: 73vw;
+		width: 100%;
+		padding-left: 2vw;
+		padding-right: 2vw;
+		transition: max-height .5s, padding-top .5s, padding-bottom .5s;
+
 		&.open{
 			position: relative;
 			left: auto;
+			max-height: 500px;
+			padding-top: 2vw;
+			padding-bottom: 2vw;
 		}
 	}
 }
