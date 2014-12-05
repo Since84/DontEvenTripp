@@ -141,7 +141,7 @@ body:not(.wp-admin) {
 /* line 17, sass/_navigation.scss */
 .site-navigation {
   position: relative;
-  background: white;
+  background: #000000;
   position: fixed;
   top: 0;
   width: 100%;
