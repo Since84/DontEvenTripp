@@ -13,7 +13,7 @@ class Service {
 	*	@return array - $posts object
 	*/
 	public function get_posts() {
-		$postArgs['posts_per_page']	= ( $_POST['options']['posts_per_page'] ? $_POST['options']['posts_per_page'] : 1 );
+		$postArgs['posts_per_page']	= ( $_POST['options']['posts_per_page'] ? $_POST['options']['posts_per_page'] : -1 );
 		$postArgs['post_type'] = ( $_POST['options']['post_type'][0] ? array($_POST['options']['post_type'][0]) : 'post' );
 		$postQuery 	= new WP_Query($postArgs);
 
@@ -53,7 +53,7 @@ class Service {
 	*/
 	public function get_gallery() {
 		$galleryArgs = $_POST['options'] ? $_POST['options'] : array(
-			'posts_per_page'		=>	'10'
+			'posts_per_page'		=>	'-1'
 		);
 		$galleryArgs['post_type'] = array('gallery');
 		$galleryQuery 	= new WP_Query($galleryArgs);
