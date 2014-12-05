@@ -297,7 +297,7 @@ body:not(.wp-admin) {
   vertical-align: top;
 }
 /* line 48, sass/_home.scss */
-.home .our-mission p {
+.home .our-mission .post-content {
   max-width: 750px;
   margin: auto;
   line-height: 1.2em;
