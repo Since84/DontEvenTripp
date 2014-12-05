@@ -638,7 +638,11 @@ ul.projects > li.project-list .project-list-item .project-description {
   padding: 1em 0;
   width: 60vw;
 }
-/* line 14, sass/_blog.scss */
+/* line 13, sass/_blog.scss */
+.our-blog .post p {
+  margin-bottom: 1em;
+}
+/* line 17, sass/_blog.scss */
 .our-blog .post-title {
   font-family: 'myriad-std-pro', sans-serif;
   font-weight: 200;
@@ -646,7 +650,7 @@ ul.projects > li.project-list .project-list-item .project-description {
   color: #000000;
   padding-bottom: 20px;
 }
-/* line 18, sass/_blog.scss */
+/* line 21, sass/_blog.scss */
 .our-blog .post-date {
   margin-bottom: 10px;
 }

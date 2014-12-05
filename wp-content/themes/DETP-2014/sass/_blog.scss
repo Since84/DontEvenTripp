@@ -10,6 +10,9 @@
 		line-height: 1.3em;
 		padding: 1em 0 ;
 		width: 60vw;
+		p {
+			margin-bottom: 1em;
+		}
 	}
 	.post-title {
 		@include header3;
