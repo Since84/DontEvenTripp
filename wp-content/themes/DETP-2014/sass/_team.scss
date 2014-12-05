@@ -95,13 +95,13 @@
 					}
 				}
 				&.mail {
-					span {
+					a {
 						background-image: url("images/ikons/mail.png");
 						background-size: contain;
 					}
 					&:hover{
 						background-color: $yellow;
-						span {
+						a {
 							background-image: url("images/ikons/mail.png");
 						}
 					}

@@ -497,7 +497,7 @@ body:not(.wp-admin) {
   background-image: url("images/ikons/facebook-white.png");
 }
 /* line 98, sass/_team.scss */
-.our-team .member .member-contact li.mail span {
+.our-team .member .member-contact li.mail a {
   background-image: url("images/ikons/mail.png");
   background-size: contain;
 }
@@ -506,7 +506,7 @@ body:not(.wp-admin) {
   background-color: #F7CA10;
 }
 /* line 104, sass/_team.scss */
-.our-team .member .member-contact li.mail:hover span {
+.our-team .member .member-contact li.mail:hover a {
   background-image: url("images/ikons/mail.png");
 }
 /* line 110, sass/_team.scss */

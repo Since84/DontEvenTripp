@@ -123,8 +123,8 @@ class Theme {
 		if(isset($_POST['member_facebook']))	
 			update_post_meta($post_id, 'member_facebook', $_POST['member_facebook']);
 
-		if(isset($_POST['member_twitter']))	
-			update_post_meta($post_id, 'member_twitter', $_POST['member_twitter']);
+		if(isset($_POST['member_email']))	
+			update_post_meta($post_id, 'member_email', $_POST['member_email']);
 
 		if(isset($_POST['member_linkedin']))	
 			update_post_meta($post_id, 'member_linkedin', $_POST['member_linkedin']);
@@ -143,7 +143,7 @@ class Theme {
 		$member_title = get_post_meta($post->ID, 'member_title', true);
 		$member_phone = get_post_meta($post->ID, 'member_phone', true);
 		$member_facebook = get_post_meta($post->ID, 'member_facebook', true);
-		$member_twitter = get_post_meta($post->ID, 'member_twitter', true);
+		$member_email = get_post_meta($post->ID, 'member_email', true);
 		$member_linkedin = get_post_meta($post->ID, 'member_linkedin', true);
 ?>
 		<ul>
@@ -160,8 +160,8 @@ class Theme {
 				<input type="text" id="member_facebook" class="widefat" name="member_facebook" value="<?php echo $member_facebook; ?>">				
 			</li>
 			<li>
-				<label for="member_twitter">Twitter</label>
-				<input type="text" id="member_twitter" class="widefat" name="member_twitter" value="<?php echo $member_twitter; ?>">				
+				<label for="member_email">Email</label>
+				<input type="text" id="member_email" class="widefat" name="member_email" value="<?php echo $member_email; ?>">				
 			</li>
 			<li>
 				<label for="member_linkedin">LinkedIn</label>

@@ -18,9 +18,8 @@
 				<% if ( postlist[p].member_facebook != "" ) { %>
 				<li class="facebook"><a href="http://facebook.com/<%= postlist[p].member_facebook %>"></a></li>
 				<% } %>
-				<li class="mail"><span></span></li>
-				<li class="profile"><span href=""></span></li>
-				<li class="instagram"></li>
+				<li class="mail"><a href="mailto:<%= postlist[p].member_facebook %>"></a></li>
+				<li class="profile"><span></span></li>
 			</ul>
 		</div>
 <% } %>
