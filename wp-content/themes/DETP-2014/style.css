@@ -251,6 +251,18 @@ body:not(.wp-admin) {
   }
 }
 
+/* line 90, sass/_navigation.scss */
+.donation {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+/* line 95, sass/_navigation.scss */
+.donation input[type="image"] {
+  height: 30px;
+}
+
 /* Home Page */
 /* Home Page Styles */
 /* line 5, sass/_home.scss */

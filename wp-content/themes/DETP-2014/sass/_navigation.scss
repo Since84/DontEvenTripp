@@ -86,3 +86,13 @@
 		font-size: 1.1em;
 	}
 }
+
+.donation {
+	display:block;
+	position: absolute;
+	top:15px;
+	right: 10px;
+	input[type="image"]{
+		height: 30px;
+	}
+}

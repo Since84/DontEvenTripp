@@ -4,7 +4,7 @@ wp_head();
 $context 				= Timber::get_context();
 $context['menu'] 		= new TimberMenu();
 $context['foot']		= get_sidebar('footer');
-$context['donate']		= get_sidebar('donate' );
+$context['donate']		= do_shortcode('[paypal-donation purpose="Generation of Dreams"]' );;
 
 //Get Pages
 $homepage 				= get_page_by_title('Home' );
