@@ -303,7 +303,7 @@ body:not(.wp-admin) {
   line-height: 1.2em;
   margin-right: 5%;
   text-align: left;
-  width: 35%;
+  width: 30%;
 }
 /* line 57, sass/_home.scss */
 .home .our-mission > div {
