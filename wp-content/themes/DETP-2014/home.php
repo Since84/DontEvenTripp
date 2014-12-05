@@ -10,7 +10,7 @@ $context['donate']		= get_sidebar('donate' );
 $homepage 				= get_page_by_title('Home' );
 if ( $homepage ) { $context['home_post']	= new TimberPost( $homepage->ID ); }
 
-$missionpage 				= get_page_by_title('Mission' );
+$missionpage 				= get_page_by_title('Engaging Art To Ignite Community' );
 if ( $missionpage ) { $context['mission_post']	= new TimberPost( $missionpage->ID ); }
 
 
