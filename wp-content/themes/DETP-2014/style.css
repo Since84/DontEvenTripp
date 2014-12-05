@@ -292,43 +292,59 @@ body:not(.wp-admin) {
 .home .our-mission h2 {
   color: black;
 }
-/* line 42, sass/_home.scss */
+/* line 43, sass/_home.scss */
+.home .our-mission > p, .home .our-mission > div {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 48, sass/_home.scss */
 .home .our-mission p {
   max-width: 750px;
   margin: auto;
   line-height: 1.2em;
+  margin-right: 5%;
+  text-align: left;
+  width: 35%;
 }
-/* line 47, sass/_home.scss */
+/* line 57, sass/_home.scss */
+.home .our-mission > div {
+  width: 30vw;
+}
+/* line 60, sass/_home.scss */
+.home .our-mission iframe {
+  width: 100%;
+  height: 25vw;
+}
+/* line 65, sass/_home.scss */
 .home .our-mission blockquote {
   quotes: "“" "”" "‘" "’";
   position: relative;
-  width: auto;
+  width: 100%;
   display: inline-block;
   font-size: 40px;
   font-family: "myriad-std-tilt";
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
-/* line 55, sass/_home.scss */
+/* line 73, sass/_home.scss */
 .home .our-mission blockquote:before, .home .our-mission blockquote:after {
   font-family: "myriad-std-tilt";
   font-size: 50px;
   position: absolute;
 }
-/* line 60, sass/_home.scss */
+/* line 78, sass/_home.scss */
 .home .our-mission blockquote:before {
   content: open-quote;
   left: -25px;
   padding-right: 10px;
 }
-/* line 65, sass/_home.scss */
+/* line 83, sass/_home.scss */
 .home .our-mission blockquote:after {
   content: close-quote;
   bottom: -20px;
   padding-left: 10px;
 }
-/* line 71, sass/_home.scss */
+/* line 89, sass/_home.scss */
 .home .our-mission .promo {
-  margin-top: 1em;
   border: 15px solid #000000;
 }
 
