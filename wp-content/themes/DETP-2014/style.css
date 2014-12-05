@@ -130,7 +130,11 @@ body:not(.wp-admin) {
   position: absolute;
   width: 12vw;
   height: 20vw;
+<<<<<<< HEAD
   background: url("images/full_color.png");
+=======
+  background: url("images/full_color.png") no-repeat;
+>>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
   background-size: contain;
   left: 2vw;
   top: 0.5vw;
@@ -184,12 +188,39 @@ body:not(.wp-admin) {
   font-weight: 600;
   text-transform: uppercase;
 }
+<<<<<<< HEAD
 /* line 30, sass/_navigation.scss */
 .home-link .site-navigation li a {
   border-bottom: 4px solid #F7CA10;
 }
 @media screen and (max-width: 700px) {
   /* line 35, sass/_navigation.scss */
+=======
+/* line 27, sass/_navigation.scss */
+.site-navigation li {
+  position: relative;
+}
+/* line 31, sass/_navigation.scss */
+.home-link .site-navigation li a {
+  border-bottom: 4px solid #F7CA10;
+}
+/* line 34, sass/_navigation.scss */
+.site-navigation li a[href="#the-blog-2"]:before {
+  content: 'Coming Soon!';
+  font-family: 'myriad-std-tilt';
+  color: black;
+  background: #F7CA10;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: .4em;
+  padding: 5px;
+  transform: rotate(0.05turn);
+}
+@media screen and (max-width: 700px) {
+  /* line 50, sass/_navigation.scss */
+>>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
   .site-navigation li:not(.home-link) {
     width: 25%;
   }
@@ -201,7 +232,11 @@ body:not(.wp-admin) {
     position: relative;
     white-space: nowrap;
   }
+<<<<<<< HEAD
   /* line 43, sass/_navigation.scss */
+=======
+  /* line 58, sass/_navigation.scss */
+>>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
   .site-navigation .home-link {
     position: absolute;
     top: 0;
@@ -210,12 +245,20 @@ body:not(.wp-admin) {
     margin: auto;
   }
 }
+<<<<<<< HEAD
 /* line 52, sass/_navigation.scss */
+=======
+/* line 67, sass/_navigation.scss */
+>>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
 .admin-bar .site-navigation {
   top: 30px;
 }
 
+<<<<<<< HEAD
 /* line 57, sass/_navigation.scss */
+=======
+/* line 72, sass/_navigation.scss */
+>>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
 .site-title {
   font-size: 1.5em;
   position: absolute;
@@ -228,7 +271,11 @@ body:not(.wp-admin) {
   height: 1em;
 }
 @media screen and (max-width: 860px) {
+<<<<<<< HEAD
   /* line 57, sass/_navigation.scss */
+=======
+  /* line 72, sass/_navigation.scss */
+>>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
   .site-title {
     font-size: 1.1em;
   }
@@ -435,7 +482,11 @@ body:not(.wp-admin) {
 /* line 57, sass/_team.scss */
 .our-team .member .member-contact {
   display: inline-block;
+<<<<<<< HEAD
   width: 16vw;
+=======
+  width: 12vw;
+>>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
   vertical-align: top;
   line-height: 1em;
 }

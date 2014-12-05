@@ -5,7 +5,11 @@
 	position: absolute;
 	width: 12vw;
 	height: 20vw;
+<<<<<<< HEAD
 	background: $site-logo;
+=======
+	background: $site-logo no-repeat; 
+>>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
 	background-size: contain;
 	left: 2vw;
 	top: 0.5vw;
@@ -25,11 +29,32 @@
 	z-index: 1000;
 
 	li { 
+<<<<<<< HEAD
+=======
+		position: relative;
+>>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
 		a {
 			// color: $textgray;
 			.home-link & {
 				border-bottom: 4px solid $yellow;
 			}
+<<<<<<< HEAD
+=======
+			&[href="#the-blog-2"]:before{
+				content: 'Coming Soon!';
+				font-family: 'myriad-std-tilt';
+				color: black;
+				background: $yellow;
+				display: block;
+				position: absolute;
+				top: 10px;
+				right: 0;
+				font-size: .4em;
+				padding: 5px;
+				transform: rotate(0.05turn)
+
+			}
+>>>>>>> a5a7d5d17b6055106c255470fac7130ecc413e0f
 		}
 		@media screen and ( max-width: 700px ) {
 			&:not(.home-link) { width: 25%; }
