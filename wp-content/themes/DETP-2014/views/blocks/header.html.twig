@@ -1,6 +1,6 @@
 <header>
 	<div class="site-navigation">
-		<span class="site-logo"></span>
+		<a href="#home-content" class="site-logo"></a>
 		<ul class="container">
 		{% for item in menu.get_items %}
 			<li class="nav-main-item {{item.classes | join(' ')}}"><a class="nav-main-link" href="#{{ item.post_name}}">{{ item.title }}</a>
