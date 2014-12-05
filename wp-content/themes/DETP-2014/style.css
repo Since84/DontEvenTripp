@@ -141,7 +141,7 @@ body:not(.wp-admin) {
 /* line 17, sass/_navigation.scss */
 .site-navigation {
   position: relative;
-  background: #000000;
+  background: white;
   position: fixed;
   top: 0;
   width: 100%;
@@ -414,7 +414,7 @@ body:not(.wp-admin) {
   margin-right: 8vw;
   display: inline-block;
   vertical-align: top;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: left;
   overflow: hidden;
   padding: 5px;
