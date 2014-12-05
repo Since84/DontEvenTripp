@@ -29,7 +29,7 @@ class Service {
 			$post->member_title = get_post_meta($post->ID, 'member_title', true);
 			$post->member_phone = get_post_meta($post->ID, 'member_phone', true);
 			$post->member_facebook = get_post_meta($post->ID, 'member_facebook', true);
-			$post->member_twitter = get_post_meta($post->ID, 'member_twitter', true);
+			$post->member_email = get_post_meta($post->ID, 'member_email', true);
 			$post->member_linkedin = get_post_meta($post->ID, 'member_linkedin', true);
 
 			// Work Meta
