@@ -36,6 +36,7 @@ class Service {
 			$post->project_name = get_post_meta($post->ID, 'project_name', true);
 			$post->project_type = get_post_meta($post->ID, 'project_type', true);
 			$post->project_date = get_post_meta($post->ID, 'project_date', true);
+			$post->post_content = apply_filters('the_content', $post->post_content);
 
 			$newPosts[] = $post;
 		}
